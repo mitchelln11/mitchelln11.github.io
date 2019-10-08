@@ -48,6 +48,10 @@ h2 {
 	clear: both;
 }
 
+#demo {
+    color:#fff;
+}
+
 main {
 	padding:15px;
 	background:#1B1B1B;
@@ -56,7 +60,6 @@ main {
 	flex:2;
 	flex-direction:column;
 	align-self: center;
-	height: 50vh;
 }
 
 main p {
@@ -141,6 +144,7 @@ input, textarea {
     width:100%;
     margin:10px 0;
     padding:5px;
+    color: #000;
 }
 iframe {
     width:100%;
@@ -193,6 +197,10 @@ input[type=checkbox], input[type=radio] {
 #btn-grps {
     background:#444444;
     padding:15px 0;
+}
+.btn-group a {
+    display: block;
+    width: 100%;
 }
 .carousel-inner .item {
     max-height:80vh;
@@ -267,12 +275,17 @@ main [class*="block-"] {
 
 /* Media Queries */
 @media screen and (min-width: 345px) {
-	nav ul li {display:inline-block;}
-	footer ul li {display:inline-block;}
+	nav ul li {
+        display:inline-block;
+    }
+	
 }
 
 
 @media screen and (min-width: 600px) {
+    footer ul li {
+        display:inline-block;
+    }
 	.flex-container {
         flex-direction: row;
     }
@@ -292,6 +305,10 @@ main [class*="block-"] {
         flex-direction: row;
     }
     .tooltip-styles li {
+        width: auto;
+    }
+    .btn-group a {
+        display: inline-block;
         width: auto;
     }
 }
